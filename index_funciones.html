@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>JAVASCRIPT</title>
+		<script>
+			/*var usuario = prompt("Ingresa tu nombre");
+			 document.write(usuario);*/
+			/*dECLARAMOS UNA FUNCION*/
+			function escribir(texto) {
+				document.write(texto);
+			}
+
+			escribir("funcion");
+
+			var fincion_sumar;
+			var resultado = 0;
+			var funcion_multiplicar;
+			funcion_sumar = function(a, b) {
+				resultado = a + b;
+				document.write("suma" + resultado);
+			};
+
+			funcuion_multiplicar = function(a, b) {
+				resultado = a * b;
+				document.write("multiplicacion" + resultado);
+			};
+
+			/*funcion_sumar(2, 3);*/
+			/*una funcion que recibe como parametro otra funcion*/
+			var operacion;
+			operacion = function(unaFuncion){
+				unaFuncion(3,3);
+			};
+			operacion(funcion_sumar);
+			operacion(funcion_multiplicar);
+
+		</script>
+	</head>
+	<body>
+		<p>
+			Aprendiendo JavaScript
+		</p>
+	</body>
+</html>
